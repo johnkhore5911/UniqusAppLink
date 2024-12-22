@@ -149,8 +149,6 @@
 
 // export default App;
 
-
-
 import React from 'react';
 import pic from './image/pic.png';
 
@@ -242,10 +240,12 @@ const styles = {
     justifyContent: 'space-between',
     padding: '5rem 8rem',
     flexGrow: 1,
+    flexWrap: 'wrap', // Allow elements to wrap on smaller screens
   },
   heroContent: {
     textAlign: 'left',
     maxWidth: '50%',
+    paddingRight: '2rem', // Add some padding for mobile
   },
   heroTitle: {
     fontSize: '4rem',
@@ -268,12 +268,51 @@ const styles = {
   heroImage: {
     textAlign: 'right',
     flexShrink: 0,
+    marginTop: '2rem', // For mobile responsiveness
   },
   image: {
     borderRadius: '50%',
-    width: '600px',
-    height: '600px',
+    width: '100%',
+    maxWidth: '400px', // Limit image size on mobile
+    height: 'auto',
     objectFit: 'cover',
+  },
+  // Mobile responsiveness styles
+  '@media (max-width: 768px)': {
+    navbar: {
+      padding: '1rem',
+      flexDirection: 'column', // Stack navbar items vertically on small screens
+    },
+    navLinks: {
+      flexDirection: 'column',
+      gap: '1rem',
+      textAlign: 'center', // Center the nav links
+    },
+    heroSection: {
+      padding: '2rem',
+      flexDirection: 'column', // Stack content vertically on small screens
+      alignItems: 'center', // Center the content
+    },
+    heroContent: {
+      maxWidth: '100%',
+      paddingRight: '0',
+    },
+    heroTitle: {
+      fontSize: '2.5rem', // Smaller font size for mobile
+    },
+    downloadButton: {
+      fontSize: '1.2rem', // Smaller button on mobile
+      padding: '1rem 1.5rem',
+    },
+    heroImage: {
+      marginTop: '2rem',
+      textAlign: 'center',
+    },
+    image: {
+      maxWidth: '300px', // Smaller image on mobile
+      width: '100%',
+      height: 'auto',
+    },
   },
 };
 

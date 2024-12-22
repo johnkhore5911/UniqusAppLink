@@ -1,0 +1,82 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header Section */
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+}
+
+/* Main Content Section */
+.content {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Download Button */
+.download-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Section */
+.footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .download-button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}

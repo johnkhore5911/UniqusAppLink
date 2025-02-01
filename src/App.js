@@ -59,14 +59,14 @@ const App = () => {
             style={styles.downloadButton(isMobile)}
             onClick={() =>
               window.open(
-                'https://drive.google.com/file/d/1D3ZR4R4tS_fhiV_UXNbzlbBkIUGeaQq7/view?usp=sharing',
+                'https://drive.google.com/file/d/1lOopq_jDqu6B5W7Y33kEFwUxQccovPY1/view?usp=sharing',
                 '_blank'
               )
             }
           >
             Try Uniqus Digital Classroom (beta)
           </button>
-          <div style={{marginTop:10,fontSize:12}}>Last Update: 22/12/2024</div>
+          <div style={{marginTop:10,fontSize:12}}>Last Update: 01/02/2025</div>
         </div>
         <div style={styles.heroImage(isMobile)}>
           <img

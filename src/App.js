@@ -59,7 +59,7 @@ const App = () => {
             style={styles.downloadButton(isMobile)}
             onClick={() =>
               window.open(
-                'https://drive.google.com/file/d/1ceyjrRsJ_0Fw4ezQwl4w6s6eQv5rfipf/view?usp=sharing',
+                'https://drive.google.com/file/d/1iYXJvrepL92oOXcPo-iO0JutVyJ9HCRO/view?usp=sharing',
                 '_blank'
               )
             }
